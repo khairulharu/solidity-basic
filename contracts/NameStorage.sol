@@ -22,11 +22,40 @@ contract NameStorage {
      //untuk tipe data dynamic cocok untuk array yang kita tidak tahu berapa isinya, atau lists yang kita tidak tahu
      uint[] public dynamicArray;
 
+     //Contoh penggunaan array, disini saya akan memasukkan data ke dalam dynamic array, yang berarti ukuran array nya itu tidak di limit, beda dengan yang di limit atau ada angka pada saat inisialisai variable arraynya
+     function addElement(uint element) public {
+          dynamicArray.push(element);
+     }
+
+     //pengambilan array pada dynamicArray hampir sama seperti dan pada umumnya
+     function getElement(uint index) public view returns (uint) {
+          return dynamicArray[index];
+     }
+
      //fixed array atau array dengan ukuran dan panjang yang sudah di tentutkan;
      //pada kode ini berarti hanya boleh 5 angka yang masuk, selebihnya itu akan error;
      uint[5] public fixedArray;
 
-     //tipe data map
+     //cara memasukkan element ke dalam fixed array itu berbeda dengan dynamicArray yang dimana fixed array itu harus didefenisikan index ke berapakah element itu akan masuk, berbeda dengan dynamic array yang index nya itu otomatis
+     function setFixedArrayElement(uint index, uint element) public {
+          fixedArray[index] = element;
+     }
+
+     //hampir sama seperti array pada umumnya
+     function getFixedArrayElement(uint index) public view returns (uint) {
+          return fixedArra[index];
+     }
+
+     //tipe data map, address sebagai data yang key nya dan unit sebagai valuenya
+     mapping(address => uint) public balances;
+
+     function updateBalances(address user, uint amount) public {
+          balance[user] = amount;
+     }
+
+     function getBalance(address user) public view returns (uint) {
+          return balances[user];
+     }
 
      function setName(string memory name) public {
           nameStorage = name;
