@@ -43,14 +43,14 @@ contract NameStorage {
 
      //hampir sama seperti array pada umumnya
      function getFixedArrayElement(uint index) public view returns (uint) {
-          return fixedArra[index];
+          return fixedArray[index];
      }
 
      //tipe data map, address sebagai data yang key nya dan unit sebagai valuenya
      mapping(address => uint) public balances;
 
      function updateBalances(address user, uint amount) public {
-          balance[user] = amount;
+          balances[user] = amount;
      }
 
      function getBalance(address user) public view returns (uint) {
