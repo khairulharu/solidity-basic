@@ -26,6 +26,8 @@ contract NameStorage {
      //pada kode ini berarti hanya boleh 5 angka yang masuk, selebihnya itu akan error;
      uint[5] public fixedArray;
 
+     //tipe data map
+
      function setName(string memory name) public {
           nameStorage = name;
      }
