@@ -1024,12 +1024,12 @@
     "5777": {
       "events": {},
       "links": {},
-      "address": "0x5d979647e882766eCa4383af94F0972104958418",
-      "transactionHash": "0x0a701fc3bd6d1da45bb35ed9729dc5282ebbb78136adb42add258440c667bb28"
+      "address": "0x651eE1743Bf668D2A8110eE16faC43D5a99B7172",
+      "transactionHash": "0xb87e201bdfb6569c9e095e2c1f2fc94973611a9bf2be26d185bd6137f20130ba"
     }
   },
   "schemaVersion": "3.4.16",
-  "updatedAt": "2024-10-31T14:34:23.029Z",
+  "updatedAt": "2024-11-02T02:59:48.606Z",
   "networkType": "ethereum",
   "devdoc": {
     "kind": "dev",
