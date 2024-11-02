@@ -76,4 +76,33 @@ contract NameStorage {
      // while (umur < 18) {
      //      umur += 1
      // }
+
+     //function di solidity seperti apakah
+     // function functionName(type parameter) visibility returns (type) {
+     //      //function body
+     // }
+
+     //VISIBILITY DI SOLIDITY
+
+     uint public valueStorage;
+
+     //public hanya dapat di panggil oleh akun eksternal atau internal
+     function set(uint x) public {
+          valueStorage = x;
+     }
+
+     //externall hanya dapat dipanggil oleh akun external atau kontrak lain, tidak dipanggil secara internal, katanya external biasa digunakan untuk mengubuhngkan beberapa kontrak atau memanggil kontrak lain
+     function set(uint x) external {
+          valueStorage = x;
+     }
+
+     //internal hanya dapat dipanggil di dalam kontrak saat ini atau kontrak turunan
+     function increment(uint x) internal {
+          valueStorage += 1;
+     }
+
+     //private hanya dapat dipanggil di dalam kontrak saat ini
+     function decrement() private {
+          storedData -= 1;
+     }
 }

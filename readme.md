@@ -8,7 +8,7 @@ npm install -g truffle
 ```
 and install ganache you can visit to ganache website,
 
-clone this repository and compile code use
+clone this repository and if you want to testing contract use this command
 ```
 truffle compile
 ```
