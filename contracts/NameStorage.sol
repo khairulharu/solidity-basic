@@ -64,4 +64,16 @@ contract NameStorage {
      function getName() public view returns (string memory) {
           return nameStorage;
      }
+
+     //for loop di solidity
+     // uint value = 0;
+     // for (uint i =0; i < 100; i++) {
+     //      value += i
+     // }
+
+     //while loop di solidity
+     // uint umur = 0;
+     // while (umur < 18) {
+     //      umur += 1
+     // }
 }
