@@ -12,7 +12,8 @@
         }
       ],
       "stateMutability": "view",
-      "type": "function"
+      "type": "function",
+      "constant": true
     },
     {
       "inputs": [
@@ -38,7 +39,8 @@
         }
       ],
       "stateMutability": "view",
-      "type": "function"
+      "type": "function",
+      "constant": true
     }
   ],
   "metadata": "{\"compiler\":{\"version\":\"0.8.19+commit.7dd6d404\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"inputs\":[{\"internalType\":\"uint256\",\"name\":\"grade\",\"type\":\"uint256\"}],\"name\":\"calculateStatus\",\"outputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"getStatus\",\"outputs\":[{\"internalType\":\"string\",\"name\":\"\",\"type\":\"string\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"status\",\"outputs\":[{\"internalType\":\"string\",\"name\":\"\",\"type\":\"string\"}],\"stateMutability\":\"view\",\"type\":\"function\"}],\"devdoc\":{\"kind\":\"dev\",\"methods\":{},\"version\":1},\"userdoc\":{\"kind\":\"user\",\"methods\":{},\"version\":1}},\"settings\":{\"compilationTarget\":{\"project:/contracts/GraduationStatus.sol\":\"GraduationStatus\"},\"evmVersion\":\"paris\",\"libraries\":{},\"metadata\":{\"bytecodeHash\":\"ipfs\"},\"optimizer\":{\"enabled\":false,\"runs\":200},\"remappings\":[]},\"sources\":{\"project:/contracts/GraduationStatus.sol\":{\"keccak256\":\"0xb65445a734b7a500ecb8e2d448b88dc439cc9ad91497f690542e6694f9484baf\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://7be41a464275e0af14ac2770c67523203ded6c58a6782e0459b6411f61863b78\",\"dweb:/ipfs/QmUCYBByZVFMMBjEEXn6TQvH3J23Tcpymv5kziFXRdmiSL\"]}},\"version\":1}",
@@ -4797,9 +4799,17 @@
     "name": "solc",
     "version": "0.8.19+commit.7dd6d404.Emscripten.clang"
   },
-  "networks": {},
+  "networks": {
+    "5777": {
+      "events": {},
+      "links": {},
+      "address": "0x25c661BEE93eAe47740f85Faba490200AE1B3cAe",
+      "transactionHash": "0x44012d31576661114663cbc700400d1a35118053ad8e7fa4d7585934afa7e591"
+    }
+  },
   "schemaVersion": "3.4.16",
-  "updatedAt": "2024-11-02T02:56:14.320Z",
+  "updatedAt": "2024-11-02T03:03:43.213Z",
+  "networkType": "ethereum",
   "devdoc": {
     "kind": "dev",
     "methods": {},
