@@ -123,9 +123,16 @@ contract NameStorage {
     //state external ini berarti tidak mengubah data dari luar function itu sendiri, retrn nya hanya bergantung pada
     //parameter yang diberikan jadi tidak ada perubahan state
 
-    function add(uint a, uint b) public pure returns (uint) {
-        return a + b; // Tidak membaca atau memodifikasi state external.
-    }
+//     function add(uint a, uint b) public pure returns (uint) {
+//         return a + b; // Tidak membaca atau memodifikasi state external.
+//     }
+
+     // Function Parameters and return values, function di solidity can take multiple value and returun multiple values
+     //Example
+     // function productCounts(uint a, uint b) public pure returns (uint pieces) {
+     //      return pieces = a * b;
+     // }
+
     // Dalam konteks Solidity, yang merupakan bahasa pemrograman untuk kontrak pintar di blockchain Ethereum, istilah yang kamu sebutkan memiliki makna khusus:
 
     // State External: Ini merujuk pada data atau keadaan di luar fungsi yang dimaksud, seperti variabel yang disimpan di dalam kontrak (state variables) atau data lain di blockchain. Dengan kata lain, state external adalah semua data yang di luar lingkup fungsi yang dipanggil.
