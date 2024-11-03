@@ -18,3 +18,11 @@ and create migration so you can interactive with smart contract
 truffle migrate
 ```
 you can se on ganache app installed on you computer, you must have to open ganache before run migration.
+
+if you want testing contract you can simplify use console from truffle, using javascript to comunicate to contract
+simple like
+>truflle console > const bank = SimpleBank.deploy()
+
+```
+truffle console
+```
