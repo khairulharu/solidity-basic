@@ -11,6 +11,7 @@ contract EnhancedBank {
 
     modifier onlyOwner() {
       require(msg.sender == owner, "Not the contract owner");
+      _;
     }
 
     function deposit() public payable {
