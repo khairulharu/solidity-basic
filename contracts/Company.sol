@@ -17,12 +17,9 @@ contract Company {
   Department[] public departments;
 
   function addDepartment(string memory _name) public {
-    Department memory newDept = Department({
-      name: _name,
-      employees: new Employee()[0]
-    });
-
-    departments.push(newDept);
+    departments.push();
+    Department storage newDept = departments[departments.length -1];
+    newDept.name = _name;
   }
 
   function addEmployeeToDepartment(uint _deptIndex, string memory _name, uint _age, address _wallet) public {
