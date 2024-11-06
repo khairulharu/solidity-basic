@@ -9,35 +9,35 @@ contract Company {
     address wallet;
   }
 
-  struct Departement {
+  struct Department {
     string name;
     Employee[] employees;
   }
 
-  Departement[] public departements;
+  Department[] public departments;
 
-  function addDepartement(string memory _name) public {
-    Departement memory newDept = Departement({
+  function addDepartment(string memory _name) public {
+    Department memory newDept = Department({
       name: _name,
-      employees: new Employee
+      employees: new Employee()[0]
     });
 
-    departements.push(departement);
+    departments.push(newDept);
   }
 
-  function addEmployeeToDepartement(uint _deptIndex, string memory _name, uint _age, address _wallet) public {
+  function addEmployeeToDepartment(uint _deptIndex, string memory _name, uint _age, address _wallet) public {
     Employee memory newEmployee = Employee({
       name: _name,
       age: _age,
       wallet: _wallet
     });
 
-    departements[_deptIndex].employees.push(newEmployee);
+    departments[_deptIndex].employees.push(newEmployee);
   }
 
   function getEmployee(uint _deptIndex, uint _empIndex) public view returns (string memory, uint, address) {
-    Employee storage employee = departements[_deptIndex].employees[_empIndex];
+    Employee storage employee = departments[_deptIndex].employees[_empIndex];
 
-    returns (employee.name, employee.age, employee.wallet)
+    return (employee.name, employee.age, employee.wallet);
   }
 }
