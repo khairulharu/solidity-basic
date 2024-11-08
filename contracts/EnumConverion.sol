@@ -19,7 +19,7 @@ contract EnumConversion {
     return status;
   }
 
-  function getStatusAsInt() public view returns (Status) {
+  function getStatusAsInt() public view returns (uint) {
     return uint(status);
   }
 
