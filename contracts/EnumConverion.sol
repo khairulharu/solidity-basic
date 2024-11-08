@@ -11,7 +11,7 @@ contract EnumConversion {
 
   Status public status;
 
-  function setStatus(uint _status) public {
+  function setStatus(Status _status) public {
     status = _status;
   }
 
