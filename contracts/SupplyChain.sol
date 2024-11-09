@@ -17,4 +17,15 @@ contract SupplyChain {
   }
 
   Order[] public orders;
+
+  function crateOrder(uint _id, string memory _item, uint _quantity) public returns (uint256) {
+    orders.push(Order({
+      id: _id,
+      item: _item,
+      quantity: _quantity,
+      status: Status.Pending
+    }));
+
+    return orders.length - 1;
+  }
 }
