@@ -33,4 +33,10 @@ contract SupplyChain {
     require(_orderId < orders.length, "Invalid Order ID");
     orders[_orderId].status = _status;
   }
+
+  function getOrder(uint _orderId) public view returns (uint, string memory, uint, Status) {
+    require(_orderId < orders.length, "Invalid order ID");
+    Order storage order = orders[_orderId];
+    return (order.id, order.item, order.quantity, order.status);
+  }
 }
