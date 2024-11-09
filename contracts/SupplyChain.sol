@@ -28,4 +28,9 @@ contract SupplyChain {
 
     return orders.length - 1;
   }
+
+  function updateOrderStatus(uint _orderId, Status _status) public {
+    require(_orderId < orders.length, "Invalid Order ID");
+    orders[_orderId].status = _status;
+  }
 }
