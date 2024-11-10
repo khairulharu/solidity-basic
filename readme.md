@@ -26,3 +26,5 @@ simple like
 ```
 truffle console
 ```
+file or folder:
+contracrc
